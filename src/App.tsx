@@ -1,3 +1,4 @@
+import ThemeToggleButton from "./components/context/ThemeToggleButton";
 import EventProps from "./components/EventProps";
 import PersonList from "./components/PersonList";
 import Props from "./components/Props";
@@ -37,6 +38,7 @@ function App() {
 
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
       <UseReducer/>
+      <ThemeToggleButton/>
     </div>
   );
 }

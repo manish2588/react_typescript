@@ -1,6 +1,7 @@
 import EventProps from "./components/EventProps";
 import PersonList from "./components/PersonList";
 import Props from "./components/Props";
+import UseReducer from "./components/UseReducer";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
       <br />
 
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
-      
+      <UseReducer/>
     </div>
   );
 }

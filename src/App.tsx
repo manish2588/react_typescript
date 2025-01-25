@@ -1,7 +1,10 @@
+import API from "./components/API";
+import ComponentProps, { LowerComponent } from "./components/ComponentProps";
 import ThemeToggleButton from "./components/context/ThemeToggleButton";
 import EventProps from "./components/EventProps";
 import PersonList from "./components/PersonList";
 import Props from "./components/Props";
+import Scroll from "./components/Scroll";
 import UseReducer from "./components/UseReducer";
 
 
@@ -39,6 +42,9 @@ function App() {
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
       <UseReducer/>
       <ThemeToggleButton/>
+      <Scroll/>
+      <ComponentProps component={LowerComponent} />
+      <API/>
     </div>
   );
 }

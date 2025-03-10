@@ -4,9 +4,7 @@ import ThemeToggleButton from "./components/context/ThemeToggleButton";
 import EventProps from "./components/EventProps";
 import PersonList from "./components/PersonList";
 import Props from "./components/Props";
-import Scroll from "./components/Scroll";
-import UseReducer from "./components/UseReducer";
-
+import PropsTs from "./components/PropsTs";
 
 function App() {
   const personAddress = {
@@ -14,7 +12,7 @@ function App() {
     country: "Nepal",
   };
   const showMessage = () => {
-    alert("Hello User");
+    alert("Hello User This is message");
   };
   const showEventType = (event: React.MouseEvent<HTMLButtonElement>) => {
     alert(event.type); // Showing event type
@@ -40,11 +38,11 @@ function App() {
       <br />
 
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
-      <UseReducer/>
-      <ThemeToggleButton/>
-      <Scroll/>
+
+      <ThemeToggleButton />
       <ComponentProps component={LowerComponent} />
-      <API/>
+      <API />
+      <PropsTs name="Ram" classes="Bachelor"/>
     </div>
   );
 }

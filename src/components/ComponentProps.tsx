@@ -5,7 +5,7 @@ type NestedType = {
 };
 
 type PropTypes = {
-  component: React.ComponentType<NestedType>;
+  component: React.ComponentType<NestedType>;  //nested component vitra props ko type k xa teslai yesma rakhney
   message?:string|null;
 };
 

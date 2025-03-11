@@ -19,15 +19,15 @@ function App() {
   };
   const personList = [
     {
-      name: "Manish",
+      name: "Hero",
       class: "Bachelor",
     },
     {
-      name: "Manish",
+      name: "Ram",
       class: "Bachelor",
     },
     {
-      name: "Manish",
+      name: "Hero",
       class: "Bachelor",
     },
   ];

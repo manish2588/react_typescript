@@ -1,48 +1,30 @@
 import API from "./components/API";
+import BasicTs from "./components/BasicTs";
 import ComponentProps, { LowerComponent } from "./components/ComponentProps";
 import ThemeToggleButton from "./components/context/ThemeToggleButton";
+import DataFetching from "./components/DataFetching";
 import EventProps from "./components/EventProps";
-import PersonList from "./components/PersonList";
-import Props from "./components/Props";
+import './App.css'
 import PropsTs from "./components/PropsTs";
 
 function App() {
-  const personAddress = {
-    town: "Kathmandu",
-    country: "Nepal",
-  };
   const showMessage = () => {
     alert("Hello User This is message");
   };
   const showEventType = (event: React.MouseEvent<HTMLButtonElement>) => {
     alert(event.type); // Showing event type
   };
-  const personList = [
-    {
-      name: "Hero",
-      class: "Bachelor",
-    },
-    {
-      name: "Ram",
-      class: "Bachelor",
-    },
-    {
-      name: "Hero",
-      class: "Bachelor",
-    },
-  ];
+
   return (
     <div>
-      <Props name="Ram" age={15} obj={personAddress} />
-      <PersonList list={personList} />
-      <br />
-
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
 
       <ThemeToggleButton />
       <ComponentProps component={LowerComponent} />
       <API />
-      <PropsTs name="Ram" classes="Bachelor"/>
+      <PropsTs name="Ram" classes="Bachelor" />
+      <BasicTs />
+      <DataFetching/>
     </div>
   );
 }

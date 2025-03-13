@@ -6,6 +6,7 @@ import DataFetching from "./components/DataFetching";
 import EventProps from "./components/EventProps";
 import './App.css'
 import PropsTs from "./components/PropsTs";
+import ContextExample from "./components/ContextExample";
 
 function App() {
   const showMessage = () => {
@@ -19,12 +20,13 @@ function App() {
     <div>
       <EventProps handleClick={showMessage} handleClick2={showEventType} />
 
-      <ThemeToggleButton />
+    
       <ComponentProps component={LowerComponent} />
       <API />
       <PropsTs name="Ram" classes="Bachelor" />
       <BasicTs />
       <DataFetching/>
+      <ContextExample/>
     </div>
   );
 }
